@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthyTipsActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="NavigateBack"
+        android:padding="16dp"
+        android:src="@drawable/back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Healthy Tips for Me"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 01 - Drink plenty of water throughout the day to stay hydrated."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 02 - Practice deep breathing exercises to reduce stress and promote relaxation."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 03 - Engage in regular physical activity, such as brisk walking or
+                cycling, for improved cardiovascular health."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 04 - Prioritize adequate sleep to support overall well-being and cognitive function."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 05 - Practice mindful eating by savoring each bite and listening to your body's hunger cues."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 06 - Reduce salt intake and flavor your meals with herbs and spices for added taste."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 07 - Limit sugary beverages and opt for water or herbal tea as hydrating alternatives."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 08 - Take regular breaks from screens and engage in activities that
+                promote eye health, such as outdoor walks."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 09 - Take more plant-based meals to increase fiber intake and promote digestive health."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 10 - Add colorful fruits like berries and citrus to your diet for antioxidants and vitamins."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 11 - Drink herbal tea to boost immunity and aid digestion."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 12 - Take whole grains like brown rice for sustained energy levels."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 13 - Practice gratitude and positive thinking to improve mental well-being."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 14 - Incorporate strength training exercises into your fitness routine
+                to build muscle and support bone health."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 15 - Schedule regular check-ups with healthcare professionals for preventive care."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 16 - Include probiotic-rich foods like yogurt to promote gut health."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 17 - Limit processed foods and focus on consuming whole, natural foods."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 18 - Snack on nuts and seeds for a healthy dose of heart-healthy fats and protein."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 19 - Take short, brisk walks throughout the day to increase circulation and boost energy levels."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/tips_border"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tip 20 - Find alcohol-free activities and socialize with like-minded
+                individuals who also choose not take alcohol. Surround yourself with supportive
+                friends and family to stay committed to your teetotal lifestyle."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
