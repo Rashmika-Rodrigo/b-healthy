@@ -21,7 +21,7 @@ The app offers healthy tips, nutritional guidance, and basic health monitoring f
 - **Android Studio**: Development environment for building and testing the application.
 
 ## APK Download
-To download and test the APK, simply [click here](https://github.com/Rashmika-Rodrigo/B-Healthy/raw/refs/heads/main/B-Healthy.apk) to download the latest version.
+To download and test the APK, simply [click here](https://github.com/Rashmika-Rodrigo/b-healthy/raw/refs/heads/main/B-Healthy.apk) to download the latest version.
 
 (Note: Enable **Unknown Sources** in your device settings to install the APK.)
 
